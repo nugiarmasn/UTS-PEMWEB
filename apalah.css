@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: black;
+    color: white;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1rem 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-color: black;
+}
+
+.logo {
+    font-size: 3rem;
+    color: #b74b4b;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.logo:hover {
+    transform: scale(1.1);
+}
+
+nav a {
+    font-size: 1.8rem;
+    color: white;
+    margin-left: 2rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover, nav a.active {
+    color: #b74b4b;
+    border-bottom: 3px solid #b74b4b;
+}
+
+@media (max-width: 995px) {
+    nav {
+        display: none;
+    }
+    nav.active {
+        display: block;
+    }
+    nav a {
+        display: block;
+        font-size: 2rem;
+        margin: 2rem 0;
+    }
+}
+
+section {
+    min-height: 100vh;
+    padding: 5rem 9%;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+
+/* Styling untuk bagian kontak */
+#contact {
+    background-color: #fff;
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+#contact h2 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+#contact p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2rem;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact-item {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.social-media h3 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    flex-wrap: wrap;
+}
+
+.social-icons a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 0.2rem solid #b74b4b;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: #b74b4b;
+    margin-right: 1.5rem;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Styling untuk formulir Kirim Pesan */
+#contactForm {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #222;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+#contactForm h2 {
+    font-size: 2rem;
+    color: #b74b4b;
+    margin-bottom: 1.5rem;
+}
+
+#contactForm label {
+    font-size: 1.4rem;
+    color: #b74b4b;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0 1.5rem;
+    font-size: 1.4rem;
+    color: #222;
+    background-color: #eaeaea;
+    border: 2px solid #b74b4b;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+#contactForm input:focus,
+#contactForm textarea:focus {
+    border-color: #ff6b6b;
+    outline: none;
+}
+
+#contactForm button {
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: white;
+    background-color: #b74b4b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#contactForm button:hover {
+    background-color: #ff6b6b;
+    transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+    #contact .container {
+        width: 90%;
+    }
+    .skills {
+        display: block;
+    }
+}
